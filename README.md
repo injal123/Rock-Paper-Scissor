@@ -46,7 +46,7 @@ rock, paper, scissors/
 
 
 ## Live Demo:
-Play online: [click here](.............)
+Play online: [click here](https://injal123.github.io/Rock-Paper-Scissor/)
 
 
 ## Screenshots:
