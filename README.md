@@ -36,8 +36,7 @@ This project demonstrates DOM manipulation, event handling, and basic game logic
 ## Project Structure
 <pre>
 rock, paper, scissors/
-├── HTML/
-│ └── index.html
+├── index.html
 ├── style/
 │ └── style.css
 ├── JS/
