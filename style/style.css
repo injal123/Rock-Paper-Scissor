@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(19, 19, 15);
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.whole {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border: 8px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(248, 218, 161);
+    box-shadow: 15px 8px 8px rgb(239, 239, 136);
+    height: auto; /* Flexible height */
+    min-height: 500px; /* ensures enough space for content */
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* buttons wrap on narrow screens */
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.choice {
+    flex: 1 1 30%; /* flexible width on small screens */
+    min-width: 80px; /* don’t shrink too small */
+    max-width: 120px;
+    height: 80px;
+    font-family: "Tiny5", sans-serif;
+    font-size: 1.2rem;
+    color: burlywood;
+    background-color: gray;
+    border: 3px solid black;
+    box-shadow: 8px 5px 8px rgb(250, 250, 134);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+#result {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0;
+    word-wrap: break-word; /* prevents text overflow */
+}
+
+#score {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#reset {
+    width: 120px;
+    height: 50px;
+    font-family: "Tiny5", sans-serif;
+    font-size: 1.2rem;
+    color: burlywood;
+    background-color: gray;
+    border: 3px solid black;
+    box-shadow: 8px 5px 8px rgb(250, 250, 134);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#reset:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Media queries for small screens and tall narrow screens */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .choice {
+        height: 60px;
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    #score, #result {
+        font-size: 1.2rem;
+    }
+
+    #reset {
+        width: 100px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .whole {
+        min-height: auto; /* let height adjust naturally */
+        padding: 15px;
+    }
+}
