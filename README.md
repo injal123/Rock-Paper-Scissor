@@ -34,7 +34,7 @@ This project demonstrates DOM manipulation, event handling, and basic game logic
 
 
 ## Project Structure
-
+<pre>
 rock, paper, scissors/
 ├── HTML/
 │ └── index.html
@@ -43,10 +43,11 @@ rock, paper, scissors/
 ├── JS/
 │ └── JAVASCRIPT.js
 └── README.md
+</pre>
 
 
 ## Live Demo:
-Play online: [click here](https://injal123.github.io/Rock-Paper-Scissor/)
+Play online:  [click here](https://injal123.github.io/Rock-Paper-Scissor/)
 
 
 ## Screenshots:
